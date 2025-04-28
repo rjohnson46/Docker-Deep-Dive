@@ -1,39 +1,86 @@
-# Containers from 30,000 Feet
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Containers Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    h2 {
+      color: #666;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    blockquote {
+      font-style: italic;
+      background: #e9ecef;
+      padding: 10px 20px;
+      border-left: 4px solid #007bff;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Containers from 30,000 Feet</h1>
+    <h2>The Evolution of Virtualization</h2>
+    <ul>
+      <li><strong>Underutilized Servers:</strong> Traditionally, servers operated at only 5-10% capacity.</li>
+      <li><strong>Virtual Machines (VMs):</strong> Introduced by VMWare, allowing multiple servers to run within one.</li>
+      <li><strong>Limitations:</strong> VMs require their own OS, consuming resources and needing patching, monitoring, and licenses.</li>
+    </ul>
 
-Containers are definitely a game-changer in modern computing.
+    <h2>The Container Revolution</h2>
+    <ul>
+      <li>Containers share a single host OS, minimizing resource usage.</li>
+      <li>They are fast to start, ultra-portable, and easy to move across platforms.</li>
+    </ul>
 
-## The Evolution of Virtualization
-- **Underutilized Servers**: Traditionally, servers operated at only 5-10% capacity because IT departments overspent on infrastructure to support their applications.
-- **Rise of Virtual Machines (VMs)**: 
-  - Introduced by VMWare, VMs allow multiple servers to run within a single physical server.
-  - VMs predate containers and revolutionized resource utilization, but they require their own operating systems. This increases CPU, RAM, and resource consumption, along with the need for patching, monitoring, and often licensing.
+    <h2>Similar Technologies</h2>
+    <blockquote>
+      "There are many OS virtualization technologies similar to containers that pre-date Docker and modern containers."
+    </blockquote>
+    <ul>
+      <li>Examples include BSD Jails, Solaris Zones, and IBM's System/360 on the mainframe.</li>
+    </ul>
 
-- **Limitations of VMs**:
-  - Although easier to migrate across hypervisors and cloud platforms, VMs are resource-heavy and can be slow to boot.  
-  *(Personal note: While some claim VMs aren't portable, I’ve found moving VMs straightforward.)*
-
-## The Container Revolution
-- **Why Containers?**:
-  - Unlike VMs, containers share a single host operating system, minimizing resource usage.
-  - They are fast to start, ultra-portable, and easy to move between environments like local machines, cloud, and even VMs.
-
-- **Origins and Simplicity**:
-  - Containers began in the Linux world, developed over time by various contributors. Early implementations were complex.
-  - Docker Inc. simplified containers, making them accessible to everyone.
-
-## Similar Technologies
-- Before Docker, there were other OS virtualization solutions like:
-  - IBM's System/360 on the mainframe.
-  - BSD Jails and Solaris Zones, known Unix-based container technologies.
-  *(Direct quote: "This is a direct quote straight out the book.")*
-
-## Containers on Different Platforms
-- **Windows Containers**:
-  - Microsoft introduced Windows Containers on Windows 10 and Windows Server 2016 in collaboration with Docker Inc.
-- **Cross-Platform Considerations**:
-  - Windows containers cannot run on Linux hosts, and Linux containers cannot run on Windows hosts (with some exceptions).
-  - On Windows, Linux containers run using Docker Desktop with two modes: "Windows containers" and "Linux containers."  
-    - The newer **WSL** mode offers better performance and compatibility, making it the strategic choice over Hyper-V VMs.
-- **Mac Containers**:
-  - While there are no native Mac containers, Linux containers can run on Mac via Docker Desktop.
-
+    <h2>Containers Across Platforms</h2>
+    <ul>
+      <li><strong>Windows Containers:</strong> Available on Windows 10 and Windows Server 2016.</li>
+      <li><strong>Cross-Platform Considerations:</strong> Linux containers can run on Windows using Docker Desktop.</li>
+      <li><strong>Mac:</strong> No native Mac containers, but Linux containers can be run via Docker Desktop.</li>
+    </ul>
+    
+    <footer>Designed for GitHub-friendly presentation using HTML and CSS.</footer>
+  </div>
+</body>
+</html>
