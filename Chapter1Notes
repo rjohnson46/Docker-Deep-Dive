@@ -13,7 +13,7 @@ Containers are definitely a game-changer in modern computing.
   *(Personal note: While some claim VMs aren't portable, I’ve found moving VMs straightforward.)*
 
 ## The Container Revolution
-- **Why Containers?**: 
+- **Why Containers?**:
   - Unlike VMs, containers share a single host operating system, minimizing resource usage.
   - They are fast to start, ultra-portable, and easy to move between environments like local machines, cloud, and even VMs.
 
