@@ -1,4 +1,4 @@
-# 🐳 DockerDeepDive
+# 🐳 Docker Deep Dive
 
 ## 📖 Overview
 **Notes from the book:**  
